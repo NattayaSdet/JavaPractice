@@ -9,14 +9,15 @@ public class Palindrome_String {
 
     }
     public static boolean isPalindrome(String str){
-
-        String reversed = "";
-
+        String reversed ="";
         for (int i = str.length()-1; i >=0 ; i--) {
-            reversed += str.charAt(i);
+            reversed+= str.charAt(i);
 
         }
         boolean palindrome = reversed.equalsIgnoreCase(str);
         return palindrome;
+
     }
+
+
 }
